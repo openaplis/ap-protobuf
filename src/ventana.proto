@@ -1,0 +1,83 @@
+syntax = "proto3";
+
+package ventana;
+
+service StainOrder {
+  rpc getOrder (OrderRequest) returns (OrderReply) {}
+}
+
+message OrderReply {
+  string hl7 = 1;
+}
+
+message OrderRequest {
+  msh msh = 1;
+  pid pid = 2;
+  pv1 pv1 = 3;
+  sac sac = 4;
+  repeated stain_order stain_orders = 5;
+}
+
+message stain_order {
+    orc orc = 1;
+    obr obr = 2;
+}
+
+message msh {
+  string sending_application = 1;
+  string sending_facility = 2;
+  string receiving_application = 3;
+  string receiving_facility = 4;
+  string date_time_of_message = 5;
+  string message_type = 6;
+  string message_control_id = 7;
+}
+
+message pid {
+  string medical_record_number = 1;
+  string last_name = 2;
+  string first_name = 3;
+  string middle_initial = 4;
+  string birthdate = 5;
+  string sex = 6;
+}
+
+message pv1 {
+  string requesting_physician_npi = 1;
+  string requesting_physician_lastname = 2;
+  string requesting_physician_firstname = 3;
+}
+
+message sac {
+  string registration_date_time = 1;
+}
+
+message orc {
+  string order_control = 1;
+  string placer_order_number = 2;
+  string site_name = 3;
+  string site_description = 4;
+  string facility_code = 5;
+  string facility_name = 6;
+}
+
+message obr {
+  string sequence_id = 1;
+  string placer_order_number = 2;
+  string protocol_number = 3;
+  string protocol_name = 4;
+  string order_type = 5;
+  string observation_date_time = 6;
+  string specimen_name = 7;
+  string specimen_description = 8;
+  string surgical_procedure_name = 9;
+  string pathologist_npi = 10;
+  string pathologist_lastname = 11;
+  string pathologist_firstname = 12;
+  string slide_id = 13;
+  string slide_sequence = 14;
+  string blockid = 15;
+  string block_sequence = 16;
+  string specimen_id = 17;
+  string specimen_sequence = 18;
+}
