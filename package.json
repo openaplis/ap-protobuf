@@ -1,0 +1,23 @@
+{
+  "name": "ap-protobuf",
+  "version": "0.0.1",
+  "description": "Anatomic Pathology Protocol Buffers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openaplis/ap-protobuf.git"
+  },
+  "keywords": [
+    "Anatomic",
+    "Pathology"
+  ],
+  "author": "Sid Harder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openaplis/ap-protobuf/issues"
+  },
+  "homepage": "https://github.com/openaplis/ap-protobuf#readme"
+}
