@@ -62,7 +62,7 @@ message orc {
 }
 
 message obr {
-  string sequence_id = 1;
+  string order_sequence_id = 1;
   string placer_order_number = 2;
   string protocol_number = 3;
   string protocol_name = 4;
