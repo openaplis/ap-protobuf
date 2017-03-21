@@ -1,0 +1,1 @@
+protoc -I=d:\git\ap-protobuf\src\ --csharp_out=d:\git\ap-protobuf\src d:\git\ap-protobuf\src\ventana.proto
