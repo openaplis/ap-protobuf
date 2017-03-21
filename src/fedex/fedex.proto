@@ -11,5 +11,5 @@ message UpdateReply {
 }
 
 message UpdateRequest {
-  string updateType = 1;
+  string message = 1;
 }
