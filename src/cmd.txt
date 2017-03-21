@@ -1,5 +1,4 @@
 protoc -I=d:\git\ap-protobuf\src\ --csharp_out=d:\git\ap-protobuf\src\hl7\ventana d:\git\ap-protobuf\src\hl7\ventana\ventana.proto
-protoc -I=d:\git\ap-protobuf\src\ --js_out=d:\git\ap-protobuf\src\hl7\ventana d:\git\ap-protobuf\src\hl7\ventana\ventana.proto
 
 protoc -I=d:\git\ap-protobuf\src\ --csharp_out=d:\git\ap-protobuf\src\fedex d:\git\ap-protobuf\src\fedex\fedex.proto
-protoc -I=d:\git\ap-protobuf\src\ --js_out=d:\git\ap-protobuf\src\fedex d:\git\ap-protobuf\src\fedex\fedex.proto
+protoc --proto_path=src --js_out=import_style=commonjs,binary:src src\fedex\fedex.proto
