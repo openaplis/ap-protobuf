@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message {{className}} {
+  {{#each fields}}
+  {{protobufDataType}} {{name}} = {{inc @index}};
+  {{/each}}
+}
