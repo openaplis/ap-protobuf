@@ -1,6 +1,6 @@
 {
   "name": "ap-protobuf",
-  "version": "0.0.6",
+  "version": "0.0.15",
   "description": "Anatomic Pathology Protocol Buffers",
   "main": "index.js",
   "scripts": {
@@ -19,9 +19,5 @@
   "bugs": {
     "url": "https://github.com/openaplis/ap-protobuf/issues"
   },
-  "homepage": "https://github.com/openaplis/ap-protobuf#readme",
-  "dependencies": {
-    "ap-mssql": "0.0.5",
-    "handlebars": "^4.0.6"
-  }
+  "homepage": "https://github.com/openaplis/ap-protobuf#readme"
 }

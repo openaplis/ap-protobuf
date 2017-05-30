@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package fedex;
+
+service FedexService {
+  rpc UpdateShipments (UpdateShipmentRequest) returns (UpdateShipmentReply) {};
+}
+
+message UpdateShipmentRequest {
+  string message = 1;
+}
+
+message UpdateShipmentReply {
+  repeated ShipmentStatus shipmentStatusList = 1; 
+}
+
+message ShipmentStatus {
+  string trackingNumber = 1;
+  string reportNo = 2;
+  string status = 3;
+  bool acknowledged = 4;
+}
