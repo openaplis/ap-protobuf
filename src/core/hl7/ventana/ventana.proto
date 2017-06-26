@@ -2,12 +2,12 @@ syntax = "proto3";
 
 package ventana;
 
-service StainOrder {
-  rpc getOrder (OrderRequest) returns (OrderReply) {}
+service VentanaService {
+  rpc sendOrder (OrderRequest) returns (OrderReply) {}
 }
 
 message OrderReply {
-  string hl7 = 1;
+  string message = 1;
 }
 
 message OrderRequest {

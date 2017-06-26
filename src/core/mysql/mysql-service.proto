@@ -5,6 +5,7 @@ package mysql;
 service MysqlService {
   rpc GetUnacknowledgedTrackingNumbers (GetUnacknowledgedTrackingNumbersRequest) returns (GetUnacknowledgedTrackingNumbersResponse) {};
   rpc AcknowledgeTaskOrder (AcknowledgeTaskOrderRequest) returns (AcknowledgeTaskOrderResponse) {};
+  rpc getAccessionOrderByMasterAccessionNo (AccessionOrderRequest) returns (AccessionOrderResponse) {};
 }
 
 message GetUnacknowledgedTrackingNumbersRequest {
@@ -27,4 +28,14 @@ message AcknowledgeTaskOrderRequest {
 
 message AcknowledgeTaskOrderResponse {
   string result = 1;
+}
+
+message AccessionOrderRequest {
+  string lookupField = 1;
+  string lookupValue = 2;
+}
+
+message AccessionOrderRespsone {
+  string masterAccessionNo = 1;
+  string json = 2;
 }
