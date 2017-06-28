@@ -1,6 +1,6 @@
 {
   "name": "ap-protobuf",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Anatomic Pathology Protocol Buffers",
   "main": "index.js",
   "scripts": {
