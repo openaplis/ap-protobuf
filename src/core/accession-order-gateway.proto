@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package gateway;
+
+service AccessionOrderGateway {
+  rpc GetAccessionOrderByMasterAccessionNo (AccessionOrderRequest) returns (AccessionOrderResponse) {};
+}
+
+message AccessionOrderRequest {
+  string lookupField = 1;
+  string lookupValue = 2;
+}
+
+message AccessionOrderResponse {
+  string masterAccessionNo = 1;
+  string json = 2;
+}

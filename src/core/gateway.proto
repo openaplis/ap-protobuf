@@ -1,14 +1,11 @@
 syntax = "proto3";
 
+import "accession-order-gateway.proto";
 package gateway;
 
 service TaskGateway {
   rpc GetUnacknowledgedTrackingNumbers (GetUnacknowledgedTrackingNumbersRequest) returns (GetUnacknowledgedTrackingNumbersResponse) {};
   rpc AcknowledgeTaskOrder (AcknowledgeTaskOrderRequest) returns (AcknowledgeTaskOrderResponse) {};
-}
-
-service AccessionOrderGateway {
-  rpc GetAccessionOrderByMasterAccessionNo (AccessionOrderRequest) returns (AccessionOrderResponse) {};
 }
 
 message GetUnacknowledgedTrackingNumbersRequest {
@@ -31,14 +28,4 @@ message AcknowledgeTaskOrderRequest {
 
 message AcknowledgeTaskOrderResponse {
   string result = 1;
-}
-
-message AccessionOrderRequest {
-  string lookupField = 1;
-  string lookupValue = 2;
-}
-
-message AccessionOrderResponse {
-  string masterAccessionNo = 1;
-  string json = 2;
 }
