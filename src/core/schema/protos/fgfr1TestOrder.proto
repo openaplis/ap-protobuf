@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package fgfr1TestOrder;
+
+message Fgfr1TestOrder {
   string result = 1;
   string interpretation = 2;
   string comment = 3;

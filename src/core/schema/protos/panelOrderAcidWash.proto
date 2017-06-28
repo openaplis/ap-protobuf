@@ -1,5 +1,7 @@
 syntax = "proto3";
 
-message  {
+package panelOrderAcidWash;
+
+message PanelOrderAcidWash {
   string result = 1;
 }

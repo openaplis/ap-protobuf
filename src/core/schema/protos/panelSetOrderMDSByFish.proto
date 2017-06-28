@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderMDSByFish;
+
+message PanelSetOrderMDSByFish {
   string result = 1;
   string interpretation = 2;
   string probeSetDetail = 3;

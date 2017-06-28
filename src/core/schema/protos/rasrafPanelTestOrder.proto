@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package rasrafPanelTestOrder;
+
+message RasrafPanelTestOrder {
   string method = 1;
   string reportDisclaimer = 2;
   string krasResult = 3;

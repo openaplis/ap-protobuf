@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package orderType;
+
+message OrderType {
   string objectId = 1;
   string orderTypeId = 2;
   string orderName = 3;

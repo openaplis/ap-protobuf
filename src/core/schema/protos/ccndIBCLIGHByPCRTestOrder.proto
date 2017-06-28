@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package ccndIBCLIGHByPCRTestOrder;
+
+message CcndIBCLIGHByPCRTestOrder {
   string result = 1;
   string interpretation = 2;
   string method = 3;

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package placentaClientOrderDetail;
+
+message PlacentaClientOrderDetail {
   string birthdate = 1;
   string birthTime = 2;
   string placentaDeliveryTime = 3;

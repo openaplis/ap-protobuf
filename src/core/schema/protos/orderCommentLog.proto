@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package orderCommentLog;
+
+message OrderCommentLog {
   string objectId = 1;
   int orderCommentLogId = 2;
   int orderCommentId = 3;

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderCEBPA;
+
+message PanelSetOrderCEBPA {
   string result = 1;
   string snpResult = 2;
   string interpretation = 3;

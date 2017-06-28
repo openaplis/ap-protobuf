@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package cytologyClientOrder;
+
+message CytologyClientOrder {
   string lmp = 1;
   bool cervixPresent = 2;
   bool cervicalEndoCervical = 3;

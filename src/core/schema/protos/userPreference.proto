@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package userPreference;
+
+message UserPreference {
   string hostName = 1;
   string locationId = 2;
   bool barcodeScanEnabled = 3;

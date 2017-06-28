@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package neoARRAYSNPCytogeneticProfileTestOrder;
+
+message NeoARRAYSNPCytogeneticProfileTestOrder {
   string result = 1;
   string copyNumberVariant = 2;
   string uniparentalDisomy = 3;

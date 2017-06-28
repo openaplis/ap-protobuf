@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package bcrablByPCRTestOrder;
+
+message BcrablByPCRTestOrder {
   string result = 1;
   string detectedLogReduction = 2;
   string fusionTranscriptType = 3;

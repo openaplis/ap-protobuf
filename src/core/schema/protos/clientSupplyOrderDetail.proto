@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package clientSupplyOrderDetail;
+
+message ClientSupplyOrderDetail {
   string clientsupplyorderdetailid = 1;
   string clientsupplyorderid = 2;
   int clientsupplyid = 3;

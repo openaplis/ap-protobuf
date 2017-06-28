@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message {{className}} {
+package {{objectName}};
+
+message {{upperObjectName}} {
   {{#each fields}}
   {{protobufDataType}} {{name}} = {{inc @index}};
   {{/each}}

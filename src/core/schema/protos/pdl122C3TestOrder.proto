@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package pdl122C3TestOrder;
+
+message Pdl122C3TestOrder {
   string result = 1;
   string stainPercent = 2;
   string method = 3;

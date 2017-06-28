@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package surgicalTestOrder;
+
+message SurgicalTestOrder {
   bool papCorrelationRequired = 1;
   bool reportableCase = 2;
   bool pqriRequired = 3;

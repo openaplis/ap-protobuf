@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package physicianClientDistribution;
+
+message PhysicianClientDistribution {
   string objectId = 1;
   int physicianClientDistributionID = 2;
   string physicianClientID = 3;

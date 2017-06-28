@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package runx1RUNX1T1AML1ETOTranslocationTestOrder;
+
+message Runx1RUNX1T1AML1ETOTranslocationTestOrder {
   string result = 1;
   string interpretation = 2;
   string comment = 3;

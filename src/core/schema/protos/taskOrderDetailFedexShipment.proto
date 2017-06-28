@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package taskOrderDetailFedexShipment;
+
+message TaskOrderDetailFedexShipment {
   string trackingNumber = 1;
   string shipToFacilityId = 2;
   string zplii = 3;

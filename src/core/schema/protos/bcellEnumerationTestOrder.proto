@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package bcellEnumerationTestOrder;
+
+message BcellEnumerationTestOrder {
   string method = 1;
   string asrComment = 2;
   string wbc = 3;
