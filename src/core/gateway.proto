@@ -1,31 +1,6 @@
 syntax = "proto3";
 
-import "accession-order-gateway.proto";
 package gateway;
 
-service TaskGateway {
-  rpc GetUnacknowledgedTrackingNumbers (GetUnacknowledgedTrackingNumbersRequest) returns (GetUnacknowledgedTrackingNumbersResponse) {};
-  rpc AcknowledgeTaskOrder (AcknowledgeTaskOrderRequest) returns (AcknowledgeTaskOrderResponse) {};
-}
-
-message GetUnacknowledgedTrackingNumbersRequest {
-  string message = 1;
-}
-
-message GetUnacknowledgedTrackingNumbersResponse {
-  repeated TrackingNumber trackingNumbers = 1;
-}
-
-message TrackingNumber {
-  string trackingNumber = 1;
-  string reportNo = 2;
-}
-
-message AcknowledgeTaskOrderRequest {
-  string acknowledgeDate = 1;
-  string trackingNumber = 2;
-}
-
-message AcknowledgeTaskOrderResponse {
-  string result = 1;
-}
+import "accession-order-gateway.proto";
+import "task-gateway.proto";
