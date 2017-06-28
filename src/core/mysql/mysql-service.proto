@@ -5,6 +5,9 @@ package mysql;
 service MysqlService {
   rpc GetUnacknowledgedTrackingNumbers (GetUnacknowledgedTrackingNumbersRequest) returns (GetUnacknowledgedTrackingNumbersResponse) {};
   rpc AcknowledgeTaskOrder (AcknowledgeTaskOrderRequest) returns (AcknowledgeTaskOrderResponse) {};
+}
+
+service AccessionOrderGatewayService {
   rpc GetAccessionOrderByMasterAccessionNo (AccessionOrderRequest) returns (AccessionOrderResponse) {};
 }
 
