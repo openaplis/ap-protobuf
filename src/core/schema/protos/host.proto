@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message  {
+  string objectId = 1;
+  string hostName = 2;
+  string facilityId = 3;
+  string locationId = 4;
+}

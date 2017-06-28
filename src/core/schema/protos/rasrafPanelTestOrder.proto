@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+message  {
+  string method = 1;
+  string reportDisclaimer = 2;
+  string krasResult = 3;
+  string nrasResult = 4;
+  string hrasResult = 5;
+  string brafResult = 6;
+  string krasMutationName = 7;
+  string krasAlternateNucleotideMutationName = 8;
+  string krasConsequence = 9;
+  string krasPredictedEffectOnProtein = 10;
+  string nrasMutationName = 11;
+  string nrasAlternateNucleotideMutationName = 12;
+  string nrasConsequence = 13;
+  string nrasPredictedEffectOnProtein = 14;
+  string hrasMutationName = 15;
+  string hrasAlternateNucleotideMutationName = 16;
+  string hrasConsequence = 17;
+  string hrasPredictedEffectOnProtein = 18;
+  string brafMutationName = 19;
+  string brafAlternateNucleotideMutationName = 20;
+  string brafConsequence = 21;
+  string brafPredictedEffectOnProtein = 22;
+  string interpretation = 23;
+  string comment = 24;
+}

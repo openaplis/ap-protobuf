@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string mutation = 2;
+  string indication = 3;
+  string method = 4;
+  string interpretation = 5;
+  string tumorNucleiPercentage = 6;
+  string comment = 7;
+  bool microdissectionPerformed = 8;
+  string reportDisclaimer = 9;
+}

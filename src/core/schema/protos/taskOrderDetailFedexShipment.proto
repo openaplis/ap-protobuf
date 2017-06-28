@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message  {
+  string trackingNumber = 1;
+  string shipToFacilityId = 2;
+  string zplii = 3;
+  bool labelHasBeenPrinted = 4;
+  string shipToName = 5;
+  string shipToPhone = 6;
+  string shipToAddress1 = 7;
+  string shipToAddress2 = 8;
+  string shipToCity = 9;
+  string shipToState = 10;
+  string shipToZip = 11;
+  string paymentType = 12;
+  string accountNo = 13;
+}

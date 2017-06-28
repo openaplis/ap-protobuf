@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string ethnicGroupId = 2;
+  string comment = 3;
+  string interpretation = 4;
+  string method = 5;
+  string mutationsTested = 6;
+  string mutationsDetected = 7;
+  string result1898Plus1GtoA = 8;
+  string resultR117H = 9;
+  string result621Plus1GtoT = 10;
+  string resultG551D = 11;
+  string resultDeltaI507 = 12;
+  string result711Plus1GtoT = 13;
+  string resultG85E = 14;
+  string result1717Minus1GtoA = 15;
+  string resultR560T = 16;
+  string resultR334W = 17;
+  string result3659delC = 18;
+  string result2184delA = 19;
+  string result2789Plus5GtoA = 20;
+  string resultW1282X = 21;
+  string result3120Plus1GtoA = 22;
+  string resultA455E = 23;
+  string resultDeltaF508 = 24;
+  string resultR1162X = 25;
+  string resultR553X = 26;
+  string result3849Plus10KbCtoT = 27;
+  string resultR347P = 28;
+  string resultG542X = 29;
+  string resultN1303K = 30;
+}

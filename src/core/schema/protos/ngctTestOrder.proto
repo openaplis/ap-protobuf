@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message  {
+  string neisseriaGonorrhoeaeResult = 1;
+  string chlamydiaTrachomatisResult = 2;
+  string ngResultCode = 3;
+  string ctResultCode = 4;
+  string comment = 5;
+  string method = 6;
+  string testInformation = 7;
+}

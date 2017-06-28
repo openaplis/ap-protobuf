@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string comment = 2;
+  string lymphocytes = 3;
+  string populationAnalysis = 4;
+  string markersPerformed = 5;
+}

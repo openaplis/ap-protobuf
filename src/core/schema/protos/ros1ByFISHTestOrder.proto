@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string interpretation = 2;
+  string referenceRange = 3;
+  string probeSetDetail = 4;
+  string nucleiScored = 5;
+  string method = 6;
+  string reportDisclaimer = 7;
+  string tumorNucleiPercentage = 8;
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message  {
+  string interpretation = 1;
+  bool includeTestsPerformedOnOtherBlocks = 2;
+}
