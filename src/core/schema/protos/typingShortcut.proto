@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package typingShortcut;
+
+message TypingShortcut {
   int shortcutId = 1;
   string objectId = 2;
   string shortcut = 3;

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package egfrMutationAnalysisTestOrder;
+
+message EgfrMutationAnalysisTestOrder {
   string result = 1;
   string mutation = 2;
   string indication = 3;

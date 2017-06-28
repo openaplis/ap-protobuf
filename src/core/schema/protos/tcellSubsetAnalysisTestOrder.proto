@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package tcellSubsetAnalysisTestOrder;
+
+message TcellSubsetAnalysisTestOrder {
   string method = 1;
   string asrComment = 2;
   string cd3Percent = 3;

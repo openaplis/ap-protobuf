@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package host;
+
+message Host {
   string objectId = 1;
   string hostName = 2;
   string facilityId = 3;

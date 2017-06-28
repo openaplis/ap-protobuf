@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderHer2AmplificationByIHC;
+
+message PanelSetOrderHer2AmplificationByIHC {
   string result = 1;
   string score = 2;
   string intenseCompleteMembraneStainingPercent = 3;

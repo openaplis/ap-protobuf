@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package calreticulinMutationAnalysisTestOrder;
+
+message CalreticulinMutationAnalysisTestOrder {
   string result = 1;
   string percentage = 2;
   string mutations = 3;

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderHPV1618;
+
+message PanelSetOrderHPV1618 {
   string hpv16Result = 1;
   string hpv16ResultCode = 2;
   string hpv18Result = 3;

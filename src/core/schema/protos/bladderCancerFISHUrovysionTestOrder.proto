@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package bladderCancerFISHUrovysionTestOrder;
+
+message BladderCancerFISHUrovysionTestOrder {
   string result = 1;
   string resultDescription = 2;
   string interpretation = 3;

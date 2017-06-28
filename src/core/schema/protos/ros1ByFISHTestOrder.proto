@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package ros1ByFISHTestOrder;
+
+message Ros1ByFISHTestOrder {
   string result = 1;
   string interpretation = 2;
   string referenceRange = 3;

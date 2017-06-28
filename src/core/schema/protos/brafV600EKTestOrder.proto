@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package brafV600EKTestOrder;
+
+message BrafV600EKTestOrder {
   string result = 1;
   string interpretation = 2;
   string comment = 3;

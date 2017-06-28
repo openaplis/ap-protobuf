@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelOrderCytology;
+
+message PanelOrderCytology {
   int screenedById = 1;
   string specimenAdequacy = 2;
   string screeningType = 3;

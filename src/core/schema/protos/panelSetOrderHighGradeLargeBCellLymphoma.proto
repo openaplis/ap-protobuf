@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderHighGradeLargeBCellLymphoma;
+
+message PanelSetOrderHighGradeLargeBCellLymphoma {
   string result = 1;
   string interpretation = 2;
   string probeSetDetail = 3;

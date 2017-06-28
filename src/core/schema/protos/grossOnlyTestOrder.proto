@@ -1,5 +1,7 @@
 syntax = "proto3";
 
-message  {
+package grossOnlyTestOrder;
+
+message GrossOnlyTestOrder {
   string grossX = 1;
 }

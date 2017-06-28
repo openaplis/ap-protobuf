@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderHer2AmplificationByFishRetired2;
+
+message PanelSetOrderHer2AmplificationByFishRetired2 {
   bool includeImmunoRecommendedComment = 1;
   bool includeResultComment = 2;
   bool includePolysomyComment = 3;

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelOrder;
+
+message PanelOrder {
   string objectId = 1;
   string panelOrderId = 2;
   string reportNo = 3;

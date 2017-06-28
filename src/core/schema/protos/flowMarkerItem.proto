@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package flowMarkerItem;
+
+message FlowMarkerItem {
   string objectId = 1;
   string flowMarkerId = 2;
   string reportNo = 3;

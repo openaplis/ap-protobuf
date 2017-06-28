@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package comprehensiveColonCancerProfile;
+
+message ComprehensiveColonCancerProfile {
   string interpretation = 1;
   bool includeTestsPerformedOnOtherBlocks = 2;
 }

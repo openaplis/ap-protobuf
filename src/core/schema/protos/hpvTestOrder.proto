@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package hpvTestOrder;
+
+message HpvTestOrder {
   string result = 1;
   string comment = 2;
   string testInformation = 3;

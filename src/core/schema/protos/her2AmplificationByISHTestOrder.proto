@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package her2AmplificationByISHTestOrder;
+
+message Her2AmplificationByISHTestOrder {
   bool includeImmunoRecommendedComment = 1;
   bool includeResultComment = 2;
   bool includePolysomyComment = 3;

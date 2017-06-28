@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package fnaAdequacyAssessmentTestOrder;
+
+message FnaAdequacyAssessmentTestOrder {
   string startDate = 1;
   string endDate = 2;
 }

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderLeukemiaLymphoma;
+
+message PanelSetOrderLeukemiaLymphoma {
   string specimenNumber = 1;
   int gatingPopulation = 2;
   string gatingPopulationV2 = 3;

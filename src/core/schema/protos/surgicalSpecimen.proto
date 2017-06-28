@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package surgicalSpecimen;
+
+message SurgicalSpecimen {
   string objectId = 1;
   string surgicalSpecimenId = 2;
   string reportNo = 3;
