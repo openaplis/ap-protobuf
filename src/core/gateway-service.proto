@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-package mysql;
+package gateway;
 
-service MysqlService {
+service TaskGateway {
   rpc GetUnacknowledgedTrackingNumbers (GetUnacknowledgedTrackingNumbersRequest) returns (GetUnacknowledgedTrackingNumbersResponse) {};
   rpc AcknowledgeTaskOrder (AcknowledgeTaskOrderRequest) returns (AcknowledgeTaskOrderResponse) {};
 }
 
-service AccessionOrderGatewayService {
+service AccessionOrderGateway {
   rpc GetAccessionOrderByMasterAccessionNo (AccessionOrderRequest) returns (AccessionOrderResponse) {};
 }
 
