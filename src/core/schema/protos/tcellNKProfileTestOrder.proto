@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package tcellNKProfileTestOrder;
+
+message TcellNKProfileTestOrder {
   string wbc = 1;
   string lymphocytePercentage = 2;
   string cd3TPercent = 3;

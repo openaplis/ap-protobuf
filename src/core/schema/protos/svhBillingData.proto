@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package svhBillingData;
+
+message SvhBillingData {
   string objectId = 1;
   string svhBillingDataId = 2;
   string dateProcessed = 3;

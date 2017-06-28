@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package multipleMyelomaMGUSByFishTestOrder;
+
+message MultipleMyelomaMGUSByFishTestOrder {
   string result = 1;
   string reportComment = 2;
   string interpretation = 3;

@@ -24,11 +24,17 @@ fs.readFile(path.join(__dirname,'protobuf.handlebars'), 'utf8', function (err, s
       fs.readFile(path.join(targetPath, file), 'utf8', function (err, data) {
         if (err) throw err
         var ao = JSON.parse(data)
-        console.log(ao.objectName)
+        //console.log(ao.objectName)
+        String.prototype.upperCase = function() {
+          return this.charAt(0).toUpperCase() + this.slice(1)
+        }
+        ao.upperObjectName = ao.objectName.upperCase()
+        //console.log(ao.upperObjectName)
+
         setProtobufDataType(ao)
         var result = template(ao)
-        var newFile = path.join(__dirname, 'schema/protos') + "/" +ao.objectName + ".proto"
-        console.log(newFile)
+        var newFile = path.join(__dirname, 'schema/protos') + "/" + ao.objectName + ".proto"
+        //console.log(newFile)
         fs.writeFile(newFile, result, function () {
           if (err) throw err
         })

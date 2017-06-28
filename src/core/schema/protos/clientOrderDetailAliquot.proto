@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package clientOrderDetailAliquot;
+
+message ClientOrderDetailAliquot {
   string objectId = 1;
   string clientOrderDetailAliquotId = 2;
   string clientOrderDetailId = 3;

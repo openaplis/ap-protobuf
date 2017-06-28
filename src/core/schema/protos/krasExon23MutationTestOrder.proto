@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package krasExon23MutationTestOrder;
+
+message KrasExon23MutationTestOrder {
   string result = 1;
   string interpretation = 2;
   string mutations = 3;

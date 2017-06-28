@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package shipment;
+
+message Shipment {
   string objectId = 1;
   string shipmentId = 2;
   string shipmentFrom = 3;

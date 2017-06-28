@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package taskOrder;
+
+message TaskOrder {
   string objectId = 1;
   string taskOrderId = 2;
   string masterAccessionNo = 3;

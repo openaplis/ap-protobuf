@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package clientOrder;
+
+message ClientOrder {
   string objectId = 1;
   string clientOrderId = 2;
   bool received = 3;

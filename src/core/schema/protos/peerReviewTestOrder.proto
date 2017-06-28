@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package peerReviewTestOrder;
+
+message PeerReviewTestOrder {
   string result = 1;
   string comment = 2;
 }

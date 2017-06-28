@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package panelSetOrderFLT3;
+
+message PanelSetOrderFLT3 {
   string result = 1;
   string itdMutation = 2;
   string itdPercentage = 3;

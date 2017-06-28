@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package reviewForAdditionalTestingTestOrder;
+
+message ReviewForAdditionalTestingTestOrder {
   string comment = 1;
   string result = 2;
 }

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package womensHealthProfileTestOrder;
+
+message WomensHealthProfileTestOrder {
   bool orderHPV = 1;
   bool orderNGCT = 2;
   bool orderTrichomonas = 3;

@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package clientGroupClient;
+
+message ClientGroupClient {
   string objectId = 1;
   int clientGroupClientId = 2;
   int clientId = 3;

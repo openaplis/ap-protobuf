@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package slideOrder_Base;
+
+message SlideOrder_Base {
   string objectId = 1;
   string slideOrderId = 2;
   bool clientAccessioned = 3;

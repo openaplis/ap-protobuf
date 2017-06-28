@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package microsatelliteInstabilityAnalysisTestOrder;
+
+message MicrosatelliteInstabilityAnalysisTestOrder {
   string result = 1;
   string instabilityLevel = 2;
   string bat25Instability = 3;

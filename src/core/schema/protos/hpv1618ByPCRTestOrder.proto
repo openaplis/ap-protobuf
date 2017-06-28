@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-message  {
+package hpv1618ByPCRTestOrder;
+
+message Hpv1618ByPCRTestOrder {
   string indication = 1;
   string hpv16Result = 2;
   string hpv18Result = 3;
