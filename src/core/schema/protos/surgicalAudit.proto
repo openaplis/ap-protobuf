@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+message  {
+  string objectId = 1;
+  string surgicalAuditId = 2;
+  string reportNo = 3;
+  bool papCorrelationRequired = 4;
+  bool reportableCase = 5;
+  bool pqriRequired = 6;
+  string amendmentId = 7;
+  int immediateCorrelation = 8;
+  int papCorrelation = 9;
+  int pqriInstructions = 10;
+  string clinicalInfo = 11;
+  string grossX = 12;
+  string immediateX = 13;
+  string microscopicX = 14;
+  string comment = 15;
+  string cancerSummary = 16;
+  string status = 17;
+  string caseType = 18;
+  string immunoComment = 19;
+  string locumPerformedForInitials = 20;
+  string ajccStage = 21;
+  string immediateCorrelationComment = 22;
+  string papCorrelationComment = 23;
+  string papCorrelationAccessionNo = 24;
+  int pathologistId = 25;
+}

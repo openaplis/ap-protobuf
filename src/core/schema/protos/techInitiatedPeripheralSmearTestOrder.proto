@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message  {
+  string technologistsQuestion = 1;
+  string pathologistFeedback = 2;
+  string cbcComment = 3;
+}

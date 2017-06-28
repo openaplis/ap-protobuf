@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message  {
+  string objectId = 1;
+  string clientOrderDetailAliquotId = 2;
+  string clientOrderDetailId = 3;
+  string description = 4;
+}

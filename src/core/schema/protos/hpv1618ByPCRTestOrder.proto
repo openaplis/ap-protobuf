@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message  {
+  string indication = 1;
+  string hpv16Result = 2;
+  string hpv18Result = 3;
+  string method = 4;
+  string interpretation = 5;
+  string comment = 6;
+}

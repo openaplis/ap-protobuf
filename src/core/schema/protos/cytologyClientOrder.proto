@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+message  {
+  string lmp = 1;
+  bool cervixPresent = 2;
+  bool cervicalEndoCervical = 3;
+  bool vaginal = 4;
+  bool hysterectomy = 5;
+  bool abnormalBleeding = 6;
+  bool birthControl = 7;
+  bool hormoneTherapy = 8;
+  bool previousNormalPap = 9;
+  string previousNormalPapDate = 10;
+  bool previousAbnormalPap = 11;
+  string previousAbnormalPapDate = 12;
+  bool previousBiopsy = 13;
+  string previousBiopsyDate = 14;
+  bool prenatal = 15;
+  bool postpartum = 16;
+  bool postmenopausal = 17;
+  string icd9Code = 18;
+  bool reflexHPV = 19;
+  bool routineHPVTesting = 20;
+  bool ngctTesting = 21;
+  string screeningType = 22;
+  bool trichomonasVaginalis = 23;
+}

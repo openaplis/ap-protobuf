@@ -1,5 +1,6 @@
 var fs = require('fs')
 var Handlebars = require('handlebars')
+const path = require('path')
 
 Handlebars.registerHelper('if_eq', function(a, b, opts) {
     if (a == b) {
@@ -13,19 +14,22 @@ Handlebars.registerHelper("inc", function(value, options) {
     return parseInt(value) + 1
 })
 
-fs.readFile('./src/protobuf.handlebars', 'utf8', function (err, source) {
+fs.readFile(path.join(__dirname,'protobuf.handlebars'), 'utf8', function (err, source) {
   if (err) throw err
   var template = Handlebars.compile(source)
 
-  var targetPath = './node_modules/ap-mssql/src/schema/'
+  var targetPath = path.join(__dirname, 'schema/mysql')
   fs.readdir(targetPath, (err, files) => {
     files.forEach(file => {
-      fs.readFile(targetPath + file, 'utf8', function (err, data) {
+      fs.readFile(path.join(targetPath, file), 'utf8', function (err, data) {
         if (err) throw err
         var ao = JSON.parse(data)
+        console.log(ao.objectName)
         setProtobufDataType(ao)
         var result = template(ao)
-        fs.writeFile('./src/schema/' + ao.className + ".proto", result, function () {
+        var newFile = path.join(__dirname, 'schema/protos') + "/" +ao.objectName + ".proto"
+        console.log(newFile)
+        fs.writeFile(newFile, result, function () {
           if (err) throw err
         })
       })
@@ -36,11 +40,11 @@ fs.readFile('./src/protobuf.handlebars', 'utf8', function (err, source) {
 function setProtobufDataType(ao)
 {
   for(i=0; i<ao.fields.length; i++) {
-    if(ao.fields[i].dataType == 'varchar') {
+    if(ao.fields[i].dataType == 'string') {
       ao.fields[i].protobufDataType = 'string'
-    } else if(ao.fields[i].dataType == 'int') {
+    } else if(ao.fields[i].dataType == 'number') {
       ao.fields[i].protobufDataType = 'int'
-    } else if (ao.fields[i].dataType == 'tinyint') {
+    } else if (ao.fields[i].dataType == 'boolean') {
       ao.fields[i].protobufDataType = 'bool'
     } else if (ao.fields[i].dataType == 'datetime') {
       ao.fields[i].protobufDataType = 'int64'
