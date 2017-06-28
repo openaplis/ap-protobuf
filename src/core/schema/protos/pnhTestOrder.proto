@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string comment = 2;
+  string typeIRedBloodCells = 3;
+  string typeIIRedBloodCells = 4;
+  string typeIIIRedBloodCells = 5;
+  string typeIIMonocytes = 6;
+  string typeIIIMonocytes = 7;
+  string typeIIGranulocytes = 8;
+  string typeIIIGranulocytes = 9;
+  string method = 10;
+  string asrComment = 11;
+}

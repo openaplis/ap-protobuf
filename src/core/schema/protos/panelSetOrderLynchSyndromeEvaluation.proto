@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message  {
+  string lynchSyndromeEvaluationType = 1;
+  string interpretation = 2;
+  string comment = 3;
+  string method = 4;
+  bool brafIsIndicated = 5;
+}

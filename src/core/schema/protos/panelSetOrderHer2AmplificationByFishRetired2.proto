@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+message  {
+  bool includeImmunoRecommendedComment = 1;
+  bool includeResultComment = 2;
+  bool includePolysomyComment = 3;
+  int cellsCounted = 4;
+  int totalChr17SignalsCounted = 5;
+  int totalHer2SignalsCounted = 6;
+  int her2byIHCOrder = 7;
+  int numberOfObservers = 8;
+  string result = 9;
+  string polysomyPercent = 10;
+  string chr17SignalRangeLow = 11;
+  string chr17SignalRangeHigh = 12;
+  string her2SignalRangeLow = 13;
+  string her2SignalRangeHigh = 14;
+  string commentLabel = 15;
+  string resultDescription = 16;
+  string sampleAdequacy = 17;
+  string probeSignalIntensity = 18;
+  string techComment = 19;
+  string resultComment = 20;
+  string interpretiveComment = 21;
+  string geneticHeterogeneity = 22;
+  string her2Chr17ClusterRatio = 23;
+  string reportReference = 24;
+  string sourceBlock = 25;
+  string indicator = 26;
+  string method = 27;
+}

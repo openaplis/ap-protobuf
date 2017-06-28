@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message  {
+  bool controlsReactedAppropriately = 1;
+  string comment = 2;
+}

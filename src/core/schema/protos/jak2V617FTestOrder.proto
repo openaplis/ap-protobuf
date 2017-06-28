@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string comment = 2;
+  string interpretation = 3;
+  string method = 4;
+  string reference = 5;
+  string disclosure = 6;
+}

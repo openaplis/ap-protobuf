@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message  {
+  string objectId = 1;
+  int clientId = 2;
+  string clientName = 3;
+  string abbreviation = 4;
+  string address = 5;
+  string city = 6;
+  string state = 7;
+  string zipCode = 8;
+  string telephone = 9;
+  string facilityType = 10;
+  string fax = 11;
+  bool longDistance = 12;
+  bool showPhysiciansOnRequisition = 13;
+  string billingRuleSetId = 14;
+  string billingRuleSetId2 = 15;
+  string distributionType = 16;
+  bool inactive = 17;
+  string contactName = 18;
+  bool hasReferringProvider = 19;
+  string referringProviderClientId = 20;
+  string referringProviderClientName = 21;
+  string additionalTestingNotificationEmail = 22;
+}

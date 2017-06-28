@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string interpretation = 2;
+  string referenceRange = 3;
+  string probeSetDetail = 4;
+  string nucleiScored = 5;
+  string nucleiPercent = 6;
+  string fusions = 7;
+  string method = 8;
+  string reportDisclaimer = 9;
+  string threeFPercentage = 10;
+  bool alkGeneAmplification = 11;
+  string tumorNucleiPercentage = 12;
+}

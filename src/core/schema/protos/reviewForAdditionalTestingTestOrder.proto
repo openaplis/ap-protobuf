@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message  {
+  string comment = 1;
+  string result = 2;
+}

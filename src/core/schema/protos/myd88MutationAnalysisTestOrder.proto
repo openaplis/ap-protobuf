@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message  {
+  string result = 1;
+  string interpretation = 2;
+  string method = 3;
+  string testDevelopment = 4;
+}

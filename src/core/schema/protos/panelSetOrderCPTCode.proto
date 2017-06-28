@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message  {
+  string objectId = 1;
+  string panelSetOrderCPTCodeId = 2;
+  string referenceId = 3;
+  string reportNo = 4;
+  int clientId = 5;
+  int quantity = 6;
+  string cptCode = 7;
+  string modifier = 8;
+  string codeableDescription = 9;
+  string codeableType = 10;
+  string entryType = 11;
+  string specimenOrderId = 12;
+  string postDate = 13;
+  string codeType = 14;
+}

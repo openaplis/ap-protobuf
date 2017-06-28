@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message  {
+  string preOpDiagnosis = 1;
+  string postOpDiagnosis = 2;
+}
