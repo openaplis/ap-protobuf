@@ -7,8 +7,7 @@ service AccessionOrderGateway {
 }
 
 message AccessionOrderRequest {
-  string lookupField = 1;
-  string lookupValue = 2;
+  string masterAccessionNo = 1;  
 }
 
 message AccessionOrderResponse {
