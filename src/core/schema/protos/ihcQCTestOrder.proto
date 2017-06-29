@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package ihcQCTestOrder;
-
-message IhcQCTestOrder {
-  bool controlsReactedAppropriately = 1;
-  string comment = 2;
-}

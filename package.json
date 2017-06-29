@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/openaplis/ap-protobuf#readme",
   "dependencies": {
+    "grpc": "^1.4.1",
     "handlebars": "^4.0.10"
   }
 }

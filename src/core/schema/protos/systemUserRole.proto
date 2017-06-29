@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package systemUserRole;
-
-message SystemUserRole {
-  int systemUserRoleID = 1;
-  int userID = 2;
-  int roleID = 3;
-}

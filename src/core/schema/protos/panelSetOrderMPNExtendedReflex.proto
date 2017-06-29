@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package panelSetOrderMPNExtendedReflex;
-
-message PanelSetOrderMPNExtendedReflex {
-  string comment = 1;
-  string interpretation = 2;
-  string method = 3;
-}

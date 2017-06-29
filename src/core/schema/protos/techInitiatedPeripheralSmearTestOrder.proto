@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package techInitiatedPeripheralSmearTestOrder;
-
-message TechInitiatedPeripheralSmearTestOrder {
-  string technologistsQuestion = 1;
-  string pathologistFeedback = 2;
-  string cbcComment = 3;
-}

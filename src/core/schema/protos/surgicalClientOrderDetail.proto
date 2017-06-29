@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package surgicalClientOrderDetail;
-
-message SurgicalClientOrderDetail {
-  bool orderImmediateExam = 1;
-  bool orderFrozenSection = 2;
-}

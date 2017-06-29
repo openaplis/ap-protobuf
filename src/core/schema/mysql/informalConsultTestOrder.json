@@ -1,1 +1,0 @@
-{"objectName":"informalConsultTestOrder","tableName":"tblInformalConsultTestOrder","fields":[{"isPrimaryKey":false,"name":"request","width":"2000","dataType":"string","defaultValue":"null","isNullable":"True","sqlName":"Request"},{"isPrimaryKey":false,"name":"result","width":"2000","dataType":"string","defaultValue":"null","isNullable":"True","sqlName":"Result"}]}

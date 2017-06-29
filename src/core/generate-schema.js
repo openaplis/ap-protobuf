@@ -18,22 +18,20 @@ fs.readFile(path.join(__dirname,'protobuf.handlebars'), 'utf8', function (err, s
   if (err) throw err
   var template = Handlebars.compile(source)
 
-  var targetPath = path.join(__dirname, 'schema/mysql')
+  var targetPath = path.join(__dirname, 'csharp_json')
   fs.readdir(targetPath, (err, files) => {
     files.forEach(file => {
       fs.readFile(path.join(targetPath, file), 'utf8', function (err, data) {
         if (err) throw err
-        var ao = JSON.parse(data)
-        //console.log(ao.objectName)
+        var ao = JSON.parse(data)        
         String.prototype.upperCase = function() {
           return this.charAt(0).toUpperCase() + this.slice(1)
         }
         ao.upperObjectName = ao.objectName.upperCase()
-        //console.log(ao.upperObjectName)
 
         setProtobufDataType(ao)
         var result = template(ao)
-        var newFile = path.join(__dirname, 'schema/protos') + "/" + ao.objectName + ".proto"
+        var newFile = path.join(__dirname, 'domain') + "/" + ao.objectName + ".proto"
         //console.log(newFile)
         fs.writeFile(newFile, result, function () {
           if (err) throw err
@@ -49,7 +47,7 @@ function setProtobufDataType(ao)
     if(ao.fields[i].dataType == 'string') {
       ao.fields[i].protobufDataType = 'string'
     } else if(ao.fields[i].dataType == 'number') {
-      ao.fields[i].protobufDataType = 'int'
+      ao.fields[i].protobufDataType = 'int32'
     } else if (ao.fields[i].dataType == 'boolean') {
       ao.fields[i].protobufDataType = 'bool'
     } else if (ao.fields[i].dataType == 'datetime') {

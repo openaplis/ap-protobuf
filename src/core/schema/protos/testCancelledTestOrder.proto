@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package testCancelledTestOrder;
-
-message TestCancelledTestOrder {
-  string comment = 1;
-  int cancelledTestId = 2;
-  string cancelledTestName = 3;
-}

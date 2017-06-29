@@ -2,8 +2,7 @@ syntax = "proto3";
 
 package gateway;
 
-import "schema/protos/client.proto";
-
+import "domain/client.proto";
 
 service ProviderGateway {
   rpc getClientById (ClientRequest) returns (ClientReply) {};
@@ -14,5 +13,5 @@ message ClientRequest {
 }
 
 message ClientReply {
-  Client client = 1;
+  domain.Client client = 1;
 }
