@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package gateway;
 
-import "schema/protos/client.proto"
+import "schema/protos/client.proto";
 
 
 service ProviderGateway {
