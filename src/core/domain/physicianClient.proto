@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package domain;
+
+message PhysicianClient {
+  string objectId = 1;
+  string physicianClientId = 2;
+  int32 physicianId = 3;
+  int32 clientId = 4;
+  string providerId = 5;
+}

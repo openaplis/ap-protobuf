@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package domain;
+
+message UserPreference {
+  string hostName = 1;
+  string locationId = 2;
+  bool barcodeScanEnabled = 3;
+  string barcodeScanPort = 4;
+  string lastLocalDataUpdate = 5;
+  string lockMode = 6;
+  string containerLabelPrinter = 7;
+  string histologySlideLabelPrinter = 8;
+  string cytologySlideLabelPrinter = 9;
+  string requisitionPrinter = 10;
+  string cassettePrinter = 11;
+  string laserCassettePrinter = 12;
+  string specialStainAcknowledgementPrinter = 13;
+  string startupPage = 14;
+  string molecularLabelPrinter = 15;
+  string molecularLabelFormat = 16;
+  string pageScanner = 17;
+  string facilityId = 18;
+  bool activateNotificationAlert = 19;
+  string alertWaveFileName = 20;
+  string acknowledgeTasksFor = 21;
+  string tecanImportExportPath = 22;
+  string slideMatePrinterPath = 23;
+  string weekdayProcessorRunId = 24;
+  string weekendProcessorRunId = 25;
+  string cytologySlidePrinter = 26;
+  string lastReportNo = 27;
+  string thermoFisherSlidePrinter = 28;
+  bool useLaserCassettePrinter = 29;
+  int32 gPathologistId = 30;
+  string fedExLabelPrinter = 31;
+}

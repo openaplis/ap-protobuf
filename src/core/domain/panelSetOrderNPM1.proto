@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message PanelSetOrderNPM1 {
+  string result = 1;
+  string percentageNPM1Mutation = 2;
+  string interpretation = 3;
+  string method = 4;
+}

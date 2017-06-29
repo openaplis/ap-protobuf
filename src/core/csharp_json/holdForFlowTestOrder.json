@@ -1,0 +1,1 @@
+{"objectName":"holdForFlowTestOrder","tableName":"tblHoldForFlowTestOrder","fields":[{"isPrimaryKey":false,"name":"comment","width":"500","dataType":"string","defaultValue":"null","isNullable":"True","sqlName":"Comment"}]}

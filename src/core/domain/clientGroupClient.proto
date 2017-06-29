@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message ClientGroupClient {
+  string objectId = 1;
+  int32 clientGroupClientId = 2;
+  int32 clientId = 3;
+  int32 clientGroupId = 4;
+}

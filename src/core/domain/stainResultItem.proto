@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package domain;
+
+message StainResultItem {
+  string objectId = 1;
+  string stainResultId = 2;
+  string surgicalSpecimenId = 3;
+  bool billable = 4;
+  bool reportable = 5;
+  string testOrderId = 6;
+  string result = 7;
+  string procedureName = 8;
+  string procedureComment = 9;
+  string reportComment = 10;
+  string controlComment = 11;
+  string cptCode = 12;
+  string cptCodeQuantity = 13;
+  string immunoComment = 14;
+  string immunoCommentRptSeq = 15;
+  string stainType = 16;
+  bool noCharge = 17;
+  bool orderedAsDual = 18;
+  bool isGraded = 19;
+  bool clientAccessioned = 20;
+}

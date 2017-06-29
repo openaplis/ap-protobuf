@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message PanelSetOrderHighGradeLargeBCellLymphoma {
+  string result = 1;
+  string interpretation = 2;
+  string probeSetDetail = 3;
+  string nucleiScored = 4;
+}

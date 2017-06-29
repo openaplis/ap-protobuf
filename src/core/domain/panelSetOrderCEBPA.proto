@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message PanelSetOrderCEBPA {
+  string result = 1;
+  string snpResult = 2;
+  string interpretation = 3;
+  string method = 4;
+}

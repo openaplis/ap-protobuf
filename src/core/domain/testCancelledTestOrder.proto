@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package domain;
+
+message TestCancelledTestOrder {
+  string comment = 1;
+  int32 cancelledTestId = 2;
+  string cancelledTestName = 3;
+}

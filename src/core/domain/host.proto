@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message Host {
+  string objectId = 1;
+  string hostName = 2;
+  string facilityId = 3;
+  string locationId = 4;
+}

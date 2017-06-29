@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package domain;
+
+message NeoARRAYSNPCytogeneticProfileTestOrder {
+  string result = 1;
+  string copyNumberVariant = 2;
+  string uniparentalDisomy = 3;
+  string microarrayResults = 4;
+  string interpretation = 5;
+  string method = 6;
+  string testDevelopment = 7;
+}

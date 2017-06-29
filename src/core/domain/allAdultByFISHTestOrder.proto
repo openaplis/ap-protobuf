@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package domain;
+
+message AllAdultByFISHTestOrder {
+  string result = 1;
+  string interpretation = 2;
+  string probeSetDetail = 3;
+  string nucleiScored = 4;
+  string asrComment = 5;
+}

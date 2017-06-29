@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package domain;
+
+message PanelSetOrderHer2AmplificationByIHC {
+  string result = 1;
+  string score = 2;
+  string intenseCompleteMembraneStainingPercent = 3;
+  string breastTestingFixative = 4;
+  string interpretation = 5;
+  string method = 6;
+  string reportDisclaimer = 7;
+  string reference = 8;
+}

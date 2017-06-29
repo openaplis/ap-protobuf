@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package domain;
+
+message ExtractAndHoldForMolecularTestOrder {
+  string comment = 1;
+}

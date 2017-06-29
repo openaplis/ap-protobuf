@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package domain;
+
+message TestOrderReportDistribution {
+  string objectId = 1;
+  string testOrderReportDistributionId = 2;
+  string reportNo = 3;
+  int32 physicianId = 4;
+  int32 clientId = 5;
+  string physicianName = 6;
+  string clientName = 7;
+  string distributionType = 8;
+  bool distributed = 9;
+  string dateAdded = 10;
+  string scheduledDistributionTime = 11;
+  string timeOfLastDistribution = 12;
+  string faxNumber = 13;
+  bool longDistance = 14;
+  bool rescheduled = 15;
+  string rescheduledMessage = 16;
+}

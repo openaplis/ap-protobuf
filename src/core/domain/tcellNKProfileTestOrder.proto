@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package domain;
+
+message TcellNKProfileTestOrder {
+  string wbc = 1;
+  string lymphocytePercentage = 2;
+  string cd3TPercent = 3;
+  string cd4TPercent = 4;
+  string cd8TPercent = 5;
+  string cd16CD56NKPercent = 6;
+  string method = 7;
+  string asrComment = 8;
+  string cd3Percent = 9;
+  string cd4Percent = 10;
+  string cd8Percent = 11;
+  string cd16Percent = 12;
+  string cd19Percent = 13;
+  string cd45Percent = 14;
+  string cd56Percent = 15;
+}

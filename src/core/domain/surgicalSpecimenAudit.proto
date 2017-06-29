@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package domain;
+
+message SurgicalSpecimenAudit {
+  string objectId = 1;
+  string surgicalSpecimenAuditId = 2;
+  string surgicalAuditId = 3;
+  string reportNo = 4;
+  bool report = 5;
+  bool immediatePerformed = 6;
+  string immediateStartTime = 7;
+  string immediateEndTime = 8;
+  string amendmentId = 9;
+  string surgicalSpecimenId = 10;
+  string specimenOrderId = 11;
+  int32 diagnosisId = 12;
+  int32 immediateCorrelation = 13;
+  int32 immediatePerformedById = 14;
+  string diagnosis = 15;
+  string specimenType = 16;
+  string rescreenStatus = 17;
+  string immediatePerformedBy = 18;
+}

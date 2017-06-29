@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package domain;
+
+message CalreticulinMutationAnalysisTestOrder {
+  string result = 1;
+  string percentage = 2;
+  string mutations = 3;
+  string interpretation = 4;
+  string method = 5;
+  string asr = 6;
+}

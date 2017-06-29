@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package domain;
+
+message TcellSubsetAnalysisTestOrder {
+  string method = 1;
+  string asrComment = 2;
+  string cd3Percent = 3;
+  string cd4Percent = 4;
+  string cd8Percent = 5;
+  string cd4CD8Ratio = 6;
+  string referenceRange = 7;
+  string disclosure = 8;
+  string interpretation = 9;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package domain;
+
+message SystemUser {
+  int32 userId = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string middleInitial = 4;
+  string displayName = 5;
+  string userName = 6;
+  bool active = 7;
+  string signature = 8;
+  string initials = 9;
+  string nationalProviderId = 10;
+  string emailAddress = 11;
+}

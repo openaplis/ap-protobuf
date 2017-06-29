@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package domain;
+
+message Hpv1618ByPCRTestOrder {
+  string indication = 1;
+  string hpv16Result = 2;
+  string hpv18Result = 3;
+  string method = 4;
+  string interpretation = 5;
+  string comment = 6;
+}

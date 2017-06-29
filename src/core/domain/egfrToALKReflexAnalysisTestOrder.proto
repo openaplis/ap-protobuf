@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package domain;
+
+message EgfrToALKReflexAnalysisTestOrder {
+  string method = 1;
+  string interpretation = 2;
+  string tumorNucleiPercentage = 3;
+  bool qnsForALK = 4;
+  bool qnsForROS1 = 5;
+}

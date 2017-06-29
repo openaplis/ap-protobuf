@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package domain;
+
+message ClientOrder {
+  string objectId = 1;
+  string clientOrderId = 2;
+  bool received = 3;
+  bool submitted = 4;
+  string orderDate = 5;
+  string orderTime = 6;
+  string orderedBy = 7;
+  string pFirstName = 8;
+  string pLastName = 9;
+  string pMiddleInitial = 10;
+  string pBirthdate = 11;
+  string pSex = 12;
+  string pSSN = 13;
+  string svhMedicalRecord = 14;
+  string svhAccountNo = 15;
+  int32 clientId = 16;
+  string clientName = 17;
+  int32 clientLocationId = 18;
+  string providerId = 19;
+  string providerName = 20;
+  string clinicalHistory = 21;
+  string reportCopyTo = 22;
+  string orderType = 23;
+  int32 panelSetId = 24;
+  bool accessioned = 25;
+  bool validated = 26;
+  string collectionDate = 27;
+  string externalOrderId = 28;
+  string masterAccessionNo = 29;
+  string orderedByFirstName = 30;
+  string orderedByLastName = 31;
+  string orderedById = 32;
+  string providerFirstName = 33;
+  string providerLastName = 34;
+  bool hold = 35;
+  string holdMessage = 36;
+  string holdBy = 37;
+  bool acknowledged = 38;
+  int32 acknowledgedById = 39;
+  string acknowledgedDate = 40;
+  string systemInitiatingOrder = 41;
+  string locationCode = 42;
+  string specialInstructions = 43;
+  string pAddress1 = 44;
+  string pAddress2 = 45;
+  string pCity = 46;
+  string pState = 47;
+  string pZipCode = 48;
+  string universalServiceId = 49;
+  string orderStatus = 50;
+  string patientType = 51;
+  string electronicOrderType = 52;
+}

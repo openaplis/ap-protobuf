@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package domain;
+
+message StainTest {
+  string objectId = 1;
+  int32 stainTestId = 2;
+  int32 testId = 3;
+  string cptCode = 4;
+  string cptCodeQuantity = 5;
+  int32 immunoCommentId = 6;
+  string controlComment = 7;
+  string stainType = 8;
+}

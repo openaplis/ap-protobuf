@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package domain;
+
+message FactorVLeidenTestOrder {
+  string result = 1;
+  string resultDescription = 2;
+  string comment = 3;
+  string indication = 4;
+  string interpretation = 5;
+  string method = 6;
+  string testDevelopment = 7;
+}

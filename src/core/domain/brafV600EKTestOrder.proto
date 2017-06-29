@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package domain;
+
+message BrafV600EKTestOrder {
+  string result = 1;
+  string interpretation = 2;
+  string comment = 3;
+  string indication = 4;
+  string indicationComment = 5;
+  string tumorNucleiPercentage = 6;
+  string method = 7;
+  string reportDisclaimer = 8;
+}

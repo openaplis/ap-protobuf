@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package domain;
+
+message SlideOrder_Base {
+  string objectId = 1;
+  string slideOrderId = 2;
+  bool clientAccessioned = 3;
+  string aliquotOrderId = 4;
+  string orderDate = 5;
+  string validationStation = 6;
+  bool validated = 7;
+  int32 validatedById = 8;
+  string validatedBy = 9;
+  string validationDate = 10;
+  string printStation = 11;
+  bool printed = 12;
+  int32 printedById = 13;
+  string printedBy = 14;
+  string printDate = 15;
+  string description = 16;
+  string aliquotType = 17;
+  string label = 18;
+  string clientLabel = 19;
+  int32 orderedById = 20;
+  string orderedBy = 21;
+  string orderedFrom = 22;
+  string status = 23;
+  int32 testId = 24;
+  string testName = 25;
+  string testAbbreviation = 26;
+  string testOrderId = 27;
+  string patientLastName = 28;
+  string location = 29;
+  string reportNo = 30;
+  string labelType = 31;
+  bool orderedAsDual = 32;
+  string locationId = 33;
+  string facilityId = 34;
+}

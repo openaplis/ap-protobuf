@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message Myd88MutationAnalysisTestOrder {
+  string result = 1;
+  string interpretation = 2;
+  string method = 3;
+  string testDevelopment = 4;
+}

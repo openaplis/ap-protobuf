@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package domain;
+
+message ClientOrderDetailAliquot {
+  string objectId = 1;
+  string clientOrderDetailAliquotId = 2;
+  string clientOrderDetailId = 3;
+  string description = 4;
+}

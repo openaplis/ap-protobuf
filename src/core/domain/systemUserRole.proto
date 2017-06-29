@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package domain;
+
+message SystemUserRole {
+  int32 systemUserRoleID = 1;
+  int32 userID = 2;
+  int32 roleID = 3;
+}

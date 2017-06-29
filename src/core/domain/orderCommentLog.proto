@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package domain;
+
+message OrderCommentLog {
+  string objectId = 1;
+  int32 orderCommentLogId = 2;
+  int32 orderCommentId = 3;
+  int32 specimenLogId = 4;
+  string masterAccessionNo = 5;
+  string aliquotOrderId = 6;
+  string category = 7;
+  string action = 8;
+  string logDate = 9;
+  int32 clientId = 10;
+  string description = 11;
+  string comment = 12;
+  int32 loggedById = 13;
+  string loggedBy = 14;
+  string clientOrderId = 15;
+  bool requiresResponse = 16;
+  bool requiresNotification = 17;
+  string response = 18;
+  string notificationAddress = 19;
+  string stationName = 20;
+  string containerId = 21;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package domain;
+
+message PanelSetOrderFLT3 {
+  string result = 1;
+  string itdMutation = 2;
+  string itdPercentage = 3;
+  string tkdMutation = 4;
+  string interpretation = 5;
+  string method = 6;
+}

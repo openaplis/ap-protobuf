@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package domain;
+
+message PanelSetOrderCPTCodeBill {
+  string objectId = 1;
+  string panelSetOrderCPTCodeBillId = 2;
+  string reportNo = 3;
+  int32 clientId = 4;
+  int32 quantity = 5;
+  string cptCode = 6;
+  string modifier = 7;
+  string postDate = 8;
+  string billTo = 9;
+  string billBy = 10;
+  string codeType = 11;
+}

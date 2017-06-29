@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package domain;
+
+message Runx1RUNX1T1AML1ETOTranslocationTestOrder {
+  string result = 1;
+  string interpretation = 2;
+  string comment = 3;
+  string method = 4;
+  string asr = 5;
+}
