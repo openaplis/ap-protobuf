@@ -4,3 +4,4 @@ package gateway;
 
 import "accession-order-gateway.proto";
 import "task-gateway.proto";
+import "provider-gateway.proto"

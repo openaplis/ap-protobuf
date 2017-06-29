@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package gateway;
+
+import "schema/protos/client.proto"
+
+
+service ProviderGateway {
+  rpc getClientById (ClientRequest) returns (ClientReply) {};
+}
+
+message ClientRequest {
+  string clientId = 1;
+}
+
+message ClientReply {
+  Client client = 1;
+}
