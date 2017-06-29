@@ -5,7 +5,7 @@ package gateway;
 import "schema/protos/client.proto"
 
 
-service ClientGateway {
+service ProviderGateway {
   rpc getClientById (ClientRequest) returns (ClientReply) {};
 }
 
