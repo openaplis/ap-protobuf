@@ -3,11 +3,17 @@ syntax = "proto3";
 package gateway;
 
 service AccessionOrderGateway {
-  rpc GetAccessionOrderByMasterAccessionNo (AccessionOrderRequest) returns (AccessionOrderResponse) {};
+  rpc GetAccessionOrder (AccessionOrderRequest) returns (AccessionOrderResponse) {};
 }
 
 message AccessionOrderRequest {
-  string masterAccessionNo = 1;  
+  string searchName = 1;
+  repeated Param params = 2;
+}
+
+message Param {
+  string name = 1;
+  string value = 2;
 }
 
 message AccessionOrderResponse {

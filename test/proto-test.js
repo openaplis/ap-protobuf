@@ -11,6 +11,6 @@ describe('protobuf test', function() {
     var accessionOrderGateway = new gateway_proto.AccessionOrderGateway(process.env.AP_GATEWAY_SERVICE_BINDING, grpc.credentials.createInsecure())
     var providerGateway = new gateway_proto.ProviderGateway(process.env.AP_GATEWAY_SERVICE_BINDING, grpc.credentials.createInsecure())
     done()
-  })
+  })  
 
 })
