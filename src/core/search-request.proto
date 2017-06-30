@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package gateway;
+
+message SearchRequest {
+  string searchName = 1;
+  repeated SearchParam searchParams = 2;
+}
+
+message SearchParam {
+  string name = 1;
+  string value = 2;
+}

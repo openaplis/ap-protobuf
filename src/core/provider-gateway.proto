@@ -3,13 +3,10 @@ syntax = "proto3";
 package gateway;
 
 import "domain/client.proto";
+import "search-request.proto";
 
 service ProviderGateway {
-  rpc getClientById (ClientRequest) returns (ClientReply) {};
-}
-
-message ClientRequest {
-  string clientId = 1;
+  rpc getClientById (SearchRequest) returns (ClientReply) {};
 }
 
 message ClientReply {
