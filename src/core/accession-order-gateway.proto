@@ -2,18 +2,10 @@ syntax = "proto3";
 
 package gateway;
 
+import "search-request.proto";
+
 service AccessionOrderGateway {
-  rpc GetAccessionOrder (AccessionOrderRequest) returns (AccessionOrderResponse) {};
-}
-
-message AccessionOrderRequest {
-  string searchName = 1;
-  repeated Param params = 2;
-}
-
-message Param {
-  string name = 1;
-  string value = 2;
+  rpc GetAccessionOrder (SearchRequest) returns (AccessionOrderResponse) {};
 }
 
 message AccessionOrderResponse {
