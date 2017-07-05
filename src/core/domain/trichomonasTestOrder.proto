@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message TrichomonasTestOrder {
-  string result = 1;
-  string method = 2;
-}

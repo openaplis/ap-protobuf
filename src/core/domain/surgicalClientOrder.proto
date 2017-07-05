@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message SurgicalClientOrder {
-  string preOpDiagnosis = 1;
-  string postOpDiagnosis = 2;
-}

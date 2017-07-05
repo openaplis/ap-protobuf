@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message PanelSetOrderMPNStandardReflex {
-  string comment = 1;
-  string interpretation = 2;
-  string method = 3;
-}

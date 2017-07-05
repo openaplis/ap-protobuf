@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message SystemRole {
-  int32 systemRoleId = 1;
-  string roleName = 2;
-}

@@ -19,5 +19,5 @@ console.log('Its working: ' + SERVICE_BINDING)
 
 function getClientById (call, callback) {
   console.log(call)
-  callback(null, { client: { objectId: '123' }})
+  callback(null, { client: { objectId: '123', clientName: null }})
 }
