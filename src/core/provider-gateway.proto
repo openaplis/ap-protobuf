@@ -5,7 +5,7 @@ package gateway;
 import "search-request.proto";
 
 service ProviderGateway {
-  rpc getClientById (SearchRequest) returns (ClientReply) {};
+  rpc getClient (SearchRequest) returns (ClientReply) {};
 }
 
 message ClientReply {
