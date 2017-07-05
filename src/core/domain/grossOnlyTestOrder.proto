@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message GrossOnlyTestOrder {
-  string grossX = 1;
-}

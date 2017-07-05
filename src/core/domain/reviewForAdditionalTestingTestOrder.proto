@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message ReviewForAdditionalTestingTestOrder {
-  string comment = 1;
-  string result = 2;
-}

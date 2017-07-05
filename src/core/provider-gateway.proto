@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package gateway;
 
-import "domain/client.proto";
 import "search-request.proto";
 
 service ProviderGateway {
@@ -10,5 +9,5 @@ service ProviderGateway {
 }
 
 message ClientReply {
-  domain.Client client = 1;
+  string json = 1;
 }

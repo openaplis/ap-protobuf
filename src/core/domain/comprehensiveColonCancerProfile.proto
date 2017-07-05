@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package domain;
-
-message ComprehensiveColonCancerProfile {
-  string interpretation = 1;
-  bool includeTestsPerformedOnOtherBlocks = 2;
-}
