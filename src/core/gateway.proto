@@ -6,8 +6,8 @@ import "accession-order-gateway.proto";
 import "task-gateway.proto";
 import "provider-gateway.proto";
 
-service MySQL {
-  rpc SubmitCmd (CmdSubmitterRequest) returns (CmdSubmitterReply) {};
+service MySQLGateway {
+  rpc submitCmd (CmdSubmitterRequest) returns (CmdSubmitterReply) {};
 }
 
 message CmdSubmitterRequest {
