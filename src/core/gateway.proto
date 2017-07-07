@@ -5,3 +5,15 @@ package gateway;
 import "accession-order-gateway.proto";
 import "task-gateway.proto";
 import "provider-gateway.proto";
+
+service MySQLGateway {
+  rpc submitCmd (CmdSubmitterRequest) returns (CmdSubmitterReply) {};
+}
+
+message CmdSubmitterRequest {
+  string sql = 1;
+}
+
+message CmdSubmitterReply {
+  string json = 1;
+}
