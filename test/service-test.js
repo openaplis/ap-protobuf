@@ -9,7 +9,7 @@ var SERVICE_BINDING = '0.0.0.0:50099'
 
 server = new grpc.Server()
 server.addService(protobuf.ProviderGateway.service, {
-  getClientById: getClientById
+  getClient: getClient
 })
 
 server.bind(SERVICE_BINDING, grpc.ServerCredentials.createInsecure())
@@ -17,7 +17,7 @@ server.start()
 
 console.log('Its working: ' + SERVICE_BINDING)
 
-function getClientById (call, callback) {
+function getClient (call, callback) {
   console.log(call)
   callback(null, { client: { objectId: '123', clientName: null }})
 }
