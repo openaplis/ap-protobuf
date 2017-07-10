@@ -8,8 +8,8 @@ import "provider-gateway.proto";
 
 service MySQLGateway {
   rpc submitCmd (CmdSubmitterRequest) returns (CmdSubmitterReply) {};
-  rpc insertRow (InsertRowRequest) returns (insertRowReply) {};
-  rpc updateRow (updateRowRequest) returns (updateRowReply) {};
+  rpc insertRow (InsertRowRequest) returns (InsertRowReply) {};
+  rpc updateRow (UpdateRowRequest) returns (UpdateRowReply) {};
 }
 
 message CmdSubmitterRequest {
