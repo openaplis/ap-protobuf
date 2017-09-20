@@ -3,7 +3,7 @@ syntax = "proto3";
 package ventana;
 
 service VentanaService {
-  rpc sendOrder (OrderRequest) returns (OrderReply) {}
+  rpc buildOrder (OrderRequest) returns (OrderReply) {}
 }
 
 message OrderReply {
